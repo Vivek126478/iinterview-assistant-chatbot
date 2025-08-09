@@ -1,4 +1,3 @@
-# ui/interview_ui.py
 import streamlit as st
 from backend.interview_engine import InterviewEngine
 
@@ -7,7 +6,6 @@ def render():
     st.sidebar.header("Resume Analysis")
     st.sidebar.success(f"**Field:** {st.session_state.get('primary_field', 'N/A')}")
     st.sidebar.write("**Your Skills:**")
-    # This is where you see the "None" issue. Fix your local setup first!
     st.sidebar.info(", ".join(st.session_state.key_skills) if st.session_state.key_skills else "None Detected")
 
     if st.session_state.get("selected_round") is None:

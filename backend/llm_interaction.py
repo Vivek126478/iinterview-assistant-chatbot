@@ -1,4 +1,3 @@
-# backend/llm_interaction.py
 import subprocess
 import json
 from typing import List, Dict
